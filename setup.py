@@ -3,7 +3,7 @@ import sys
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
-import django_pylibmc
+import django_pylibmc_python3
 
 
 class Tox(TestCommand):
@@ -19,15 +19,15 @@ class Tox(TestCommand):
 
 
 setup(
-    name='django-pylibmc',
-    version=django_pylibmc.__version__,
+    name='django-pylibmc-python3',
+    version=django_pylibmc_python3.__version__,
     description='Django cache backend using pylibmc',
     long_description=open('README.rst').read(),
-    author='Jeff Balogh',
-    author_email='jbalogh@mozilla.com',
-    url='http://github.com/jbalogh/django-pylibmc',
+    author='Akshay Ohri',
+    author_email='akshay.ohri@gmail.com',
+    url='http://github.com/jbalogh/django-pylibmc-python3',
     license='BSD',
-    packages=['django_pylibmc'],
+    packages=['django_pylibmc_python3'],
     include_package_data=True,
     zip_safe=False,
     install_requires=['pylibmc>=1.1', 'Django>=1.2'],

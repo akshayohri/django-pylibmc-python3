@@ -12,7 +12,7 @@ INSTALLED_APPS = (
 
 CACHES = {
     'default': {
-        'BACKEND': 'django_pylibmc.memcached.PyLibMCCache',
+        'BACKEND': 'django_pylibmc_python3.memcached.PyLibMCCache',
         'LOCATION': 'localhost:11211',
         'TIMEOUT': 500,
         'BINARY': True,

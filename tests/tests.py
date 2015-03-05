@@ -247,18 +247,18 @@ class BaseCacheTests(object):
 class PylibmcCacheTests(unittest.TestCase, BaseCacheTests):
 
     def setUp(self):
-        self.cache = get_cache('django_pylibmc.memcached.PyLibMCCache')
+        self.cache = get_cache('django_pylibmc_pyhton3.memcached.PyLibMCCache')
 
 class PylibmcCacheWithBinaryTests(unittest.TestCase, BaseCacheTests):
 
     def setUp(self):
-        self.cache = get_cache('django_pylibmc.memcached.PyLibMCCache',
+        self.cache = get_cache('django_pylibmc_python3.memcached.PyLibMCCache',
                                BINARY=True)
 
 class PylibmcCacheWithOptionsTests(unittest.TestCase, BaseCacheTests):
 
     def setUp(self):
-        self.cache = get_cache('django_pylibmc.memcached.PyLibMCCache',
+        self.cache = get_cache('django_pylibmc_python3.memcached.PyLibMCCache',
                                OPTIONS={'tcp_nodelay': True, 'ketama': True})
 
 
